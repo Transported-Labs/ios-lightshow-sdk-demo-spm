@@ -1,0 +1,31 @@
+# DS store
+.DS_Store
+
+node_modules
+
+# xcode
+xcuserdata
+*.xcuserstate
+project.xcworkspace
+
+build/
+output/
+engine/
+
+# Per client stuff (set_client.sh)
+/GoogleService-Info.plist
+src/Base.lproj
+src/Assets.xcassets
+src/GUI/ClientResources
+
+# pods
+Pods/
+CUELiveConsumer.xcworkspace/
+Podfile.lock
+
+# Carthage
+Carthage/
+
+# XCode project
+CUELiveConsumer.xcodeproj/xcuserdata/
+CUELiveConsumer.xcodeproj/project.xcworkspace/

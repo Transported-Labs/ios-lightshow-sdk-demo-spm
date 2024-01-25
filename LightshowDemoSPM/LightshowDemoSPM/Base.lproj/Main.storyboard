@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LightshowDemoSPM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feH-VR-1Sc">
+                                <rect key="frame" x="20" y="176" width="353" height="300"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type URL to navigate" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7f9-AP-aAj">
+                                        <rect key="frame" x="10" y="50" width="333" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="url"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EqG-fy-DwP">
+                                        <rect key="frame" x="112" y="114" width="129" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Navigate to URL"/>
+                                        <connections>
+                                            <action selector="navigateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HiP-EZ-DHy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9T9-7I-Ya0">
+                                        <rect key="frame" x="112" y="194" width="129" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Open sample page"/>
+                                        <connections>
+                                            <action selector="openFileButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0m-lY-Izm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstItem="EqG-fy-DwP" firstAttribute="centerX" secondItem="feH-VR-1Sc" secondAttribute="centerX" id="2O7-Ds-uWX"/>
+                                    <constraint firstAttribute="trailing" secondItem="7f9-AP-aAj" secondAttribute="trailing" constant="10" id="E1u-6k-feo"/>
+                                    <constraint firstAttribute="height" constant="300" id="Edh-zE-L0x"/>
+                                    <constraint firstItem="9T9-7I-Ya0" firstAttribute="centerX" secondItem="feH-VR-1Sc" secondAttribute="centerX" id="Ft4-YV-mRd"/>
+                                    <constraint firstItem="9T9-7I-Ya0" firstAttribute="width" secondItem="EqG-fy-DwP" secondAttribute="width" id="JVe-UE-Ig1"/>
+                                    <constraint firstItem="EqG-fy-DwP" firstAttribute="top" secondItem="7f9-AP-aAj" secondAttribute="bottom" constant="30" id="Ocj-9G-Ycl"/>
+                                    <constraint firstItem="9T9-7I-Ya0" firstAttribute="top" secondItem="EqG-fy-DwP" secondAttribute="bottom" constant="50" id="SAU-x0-jtb"/>
+                                    <constraint firstItem="7f9-AP-aAj" firstAttribute="leading" secondItem="feH-VR-1Sc" secondAttribute="leading" constant="10" id="dhU-mA-lTL"/>
+                                    <constraint firstItem="7f9-AP-aAj" firstAttribute="top" secondItem="feH-VR-1Sc" secondAttribute="top" constant="50" id="oYR-YZ-5Re"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="feH-VR-1Sc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="22M-6a-MDN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="feH-VR-1Sc" secondAttribute="trailing" constant="20" id="LqB-le-trj"/>
+                            <constraint firstItem="feH-VR-1Sc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="geV-Qb-PDj"/>
+                            <constraint firstItem="feH-VR-1Sc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sMo-XL-sef"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="urlTextField" destination="7f9-AP-aAj" id="l3x-JN-o3h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
