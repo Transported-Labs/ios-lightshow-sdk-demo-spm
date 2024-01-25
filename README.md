@@ -6,22 +6,22 @@ Add the ios-webview-sdk framework using the Package manager in Xcode. Use the UR
 
 ![](images/xcode-1.png)
 
-Once the dialog for the package manager is opened, search for the CUELive SPM in the search field at the top right. Enter the following URL to help discover the package: `https://github.com/Transported-Labs/ios-webview-sdk.git`.
+Once the dialog for the package manager is opened, search for the SPM in the search field at the top right. Enter the following URL to help discover the package: `https://github.com/Transported-Labs/ios-webview-sdk.git. Set up `Dependency Rule`, if it's needed. Finally press `Add Package` button
 
 ![](images/xcode-2.png)
 
-You will see the like of installed packages in Project Navigator in the _Package Dependencies_
+You will see the installed package in Project Navigator in the _Package Dependencies_
 
 ![](images/xcode-3.png)
 
 
 ## Adding sample index.html
 
-Download sample index.html  [here](https://raw.githubusercontent.com/Transported-Labs/ios-webview-sdk-demo/main/WebViewDemo/Resources/index.html). Create folder Resources and place index.html inside it. Add this folder to the project. Result should be looking like this: 
+Download sample index.html [here](https://raw.githubusercontent.com/Transported-Labs/ios-webview-sdk-demo/main/WebViewDemo/Resources/index.html). Create folder `Resources` and place index.html inside it. Add this folder to the project. Result should be looking like this: 
 
 ![](images/xcode-4.png)
 
-## Setting up description keys for Camera/Microphone/Library access
+## Setting up description keys for Camera/Microphone/Photo library access
 
 Please write description texts for the following Info.plist keys:
 
